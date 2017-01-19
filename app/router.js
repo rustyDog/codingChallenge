@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('search');
-  this.route('results');
+  this.route('results', { path: '/results/:member_id'});
   this.route('profile');
 });
 
