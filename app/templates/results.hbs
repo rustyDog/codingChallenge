@@ -1,9 +1,29 @@
+<div class="row">
+  <div class="col-md-10 col-md-offset-1 jumbotron">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Member Number</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>D.O.B.</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each model as |member|}}
+        <tr>
+          <td>{{#link-to 'profile' member.memberNumber}}{{member.memberNumber}}{{/link-to}}</td>
+          <td>{{#link-to 'profile' member.memberNumber}}{{member.firstName}}{{/link-to}}</td>
+          <td>{{#link-to 'profile' member.memberNumber}}{{member.lastName}}{{/link-to}}</td>
+          <td>{{#link-to 'profile' member.memberNumber}}{{member.email}}{{/link-to}}</td>
+          <td>{{#link-to 'profile' member.memberNumber}}{{member.dob}}{{/link-to}}</td>
+          <td>{{#link-to 'profile' member.memberNumber}}{{member.homePhone}}{{/link-to}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
 
-
-    <h3>{{model.memberNumber}}</h3>
-    <div class="detail owner">
-      <span>First Name:</span> {{model.firstName}}
-    </div>
-    <div class="detail type">
-      <span>Last Name:</span> {{model.lastName}}
-    </div>

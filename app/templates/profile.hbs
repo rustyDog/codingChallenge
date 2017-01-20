@@ -1,1 +1,124 @@
-{{outlet}}
+<div class="row">
+  <div class="col-md-10 col-md-offset-1 jumbotron">
+
+    <div class="row">
+      <div class="col-md-5 ">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Basic Information
+          </div>
+          <div class="panel-body">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Member Number</td>
+                  <td>{{model.memberNumber}}</td>
+                </tr>
+                <tr>
+                  <td>First Name</td>
+                  <td>{{model.firstName}}</td>
+                </tr>
+                <tr>
+                  <td>Last Name</td>
+                  <td>{{model.lastName}}</td>
+                </tr>
+                <tr>
+                  <td>DOB</td>
+                  <td>{{model.dob}}</td>
+                </tr>
+                <tr>
+                 <td>SSN</td>
+                 <td>{{model.ssn}}</td>
+               </tr>
+               <tr>
+                 <td>Gender</td>
+                 <td>{{model.gender}}</td>
+               </tr>
+               <tr>
+                 <td>Marital Status</td>
+                 <td>{{model.maritalStatus}}</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-5 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Military Information
+          </div>
+          <div class="panel-body">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Military Branch</td>
+                  <td>{{model.military.branch}}</td>
+                </tr>
+                <tr>
+                  <td>Status</td>
+                  <td>{{model.military.status}}</td>
+                </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+   <div class="row">
+      <div class="col-md-5 ">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Identifications
+          </div>
+          <div class="panel-body">
+            {{#each model.identification as |id|}}
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Type</td>
+                  <td>{{id.type}}</td>
+                </tr>
+                <tr>
+                  <td>Number</td>
+                  <td>{{id.number}}</td>
+                </tr>
+                <tr>
+                  <td>Valid</td>
+                  <td>{{id.valid}}</td>
+                </tr>
+             </tbody>
+           </table>
+           {{/each}}
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-5 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Contact Information
+          </div>
+          <div class="panel-body">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Email</td>
+                  <td>{{model.email}}</td>
+                </tr>
+                <tr>
+                  <td>Home Phone</td>
+                  <td>{{model.homePhone}}</td>
+                </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+   </div>
+
+</div>
+</div>
