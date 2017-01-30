@@ -3448,7 +3448,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 5px 10px;
   font-size: 13px;
   line-height: 1.5;
-  border-radius: 0;
+  border-radius: 30;
 }
 .btn-xs,
 .btn-group-xs > .btn {
@@ -6933,8 +6933,16 @@ label,
 }
 
 
-.table-data {
+.table-data, .tar {
   text-align: right;
+}
+
+.tar {
+  padding-right: 15px;
+}
+
+.bradius30 {
+  border-radius: 30;
 }
 
 .panel-body .table td,

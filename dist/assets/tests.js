@@ -18,6 +18,24 @@ define('member-search/tests/app.jshint.lint-test', ['exports'], function (export
     assert.ok(true, 'app.js should pass jshint.');
   });
 });
+define('member-search/tests/bootstrap_3_7_min.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | bootstrap_3_7_min.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'bootstrap_3_7_min.js should pass jshint.\nbootstrap_3_7_min.js: line 6, col 17, Expected \'===\' and instead saw \'==\'.\nbootstrap_3_7_min.js: line 6, col 31, Expected \'{\' and instead saw \'throw\'.\nbootstrap_3_7_min.js: line 6, col 180, Expected \'===\' and instead saw \'==\'.\nbootstrap_3_7_min.js: line 6, col 189, Expected \'===\' and instead saw \'==\'.\nbootstrap_3_7_min.js: line 6, col 210, Expected \'{\' and instead saw \'throw\'.\nbootstrap_3_7_min.js: line 6, col 317, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 567, Expected \'{\' and instead saw \'if\'.\nbootstrap_3_7_min.js: line 6, col 590, Expected \'{\' and instead saw \'return\'.\nbootstrap_3_7_min.js: line 6, col 615, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 715, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 775, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 776, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 805, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 1016, Expected \'{\' and instead saw \'return\'.\nbootstrap_3_7_min.js: line 6, col 1064, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 1066, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 1067, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 1068, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 1069, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 1126, If a strict mode function is executed using function invocation, its \'this\' value will be undefined.\nbootstrap_3_7_min.js: line 6, col 1209, A constructor name should start with an uppercase letter.\nbootstrap_3_7_min.js: line 6, col 1228, Expected \'===\' and instead saw \'==\'.\nbootstrap_3_7_min.js: line 6, col 1249, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 1250, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 1252, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 1327, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 1462, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 1557, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 1836, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 1837, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 1837, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 1951, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 2013, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 2014, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 2071, If a strict mode function is executed using function invocation, its \'this\' value will be undefined.\nbootstrap_3_7_min.js: line 6, col 2140, Expected \'===\' and instead saw \'==\'.\nbootstrap_3_7_min.js: line 6, col 2180, A constructor name should start with an uppercase letter.\nbootstrap_3_7_min.js: line 6, col 2201, Expected \'===\' and instead saw \'==\'.\nbootstrap_3_7_min.js: line 6, col 2229, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 2230, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 2232, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 2327, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 2328, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 2631, Expected \'===\' and instead saw \'==\'.\nbootstrap_3_7_min.js: line 6, col 2764, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 2765, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 2774, Expected an assignment or function call and instead saw an expression.\nbootstrap_3_7_min.js: line 6, col 2775, Missing semicolon.\nbootstrap_3_7_min.js: line 6, col 2923, Expected \'===\' and instead saw \'==\'.\nbootstrap_3_7_min.js: line 6, col 3051, Expected \'===\' and instead saw \'==\'.\nbootstrap_3_7_min.js: line 6, col 3051, Too many errors. (75% scanned).\n\n51 errors');
+  });
+});
+define('member-search/tests/controllers/profile.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | controllers/profile.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'controllers/profile.js should pass jshint.\ncontrollers/profile.js: line 39, col 88, \'data\' is defined but never used.\ncontrollers/profile.js: line 46, col 47, Missing semicolon.\n\n2 errors');
+  });
+});
 define('member-search/tests/controllers/search.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
@@ -248,6 +266,28 @@ define('member-search/tests/unit/adapters/application-test.jshint.lint-test', ['
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/adapters/application-test.js should pass jshint.');
+  });
+});
+define('member-search/tests/unit/controllers/profile-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('controller:profile', 'Unit | Controller | profile', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  // Replace this with your real tests.
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var controller = this.subject();
+    assert.ok(controller);
+  });
+});
+define('member-search/tests/unit/controllers/profile-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/controllers/profile-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/controllers/profile-test.js should pass jshint.');
   });
 });
 define('member-search/tests/unit/controllers/search-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
